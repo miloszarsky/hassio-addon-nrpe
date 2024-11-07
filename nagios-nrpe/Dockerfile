@@ -20,7 +20,7 @@ COPY rootfs /
 
 RUN \
     # Install the 'tar' package using apk, without caching the package index locally.
-    apk add --no-cache --update tar nrpe nagios-plugins-all\
+    apk add --no-cache --update tar nrpe nagios-plugins-all \
     # Assign the value of BUILD_ARCH to a new variable ARCH.
     && ARCH="${BUILD_ARCH}" \
     # Check if the architecture is 'aarch64' and if so, set ARCH to 'arm64'.
