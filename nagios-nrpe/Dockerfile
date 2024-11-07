@@ -1,6 +1,6 @@
 # Specify the base image.
-ARG BUILD_FROM
-#ARG BUILD_FROM=ghcr.io/hassio-addons/base:16.3.4
+#ARG BUILD_FROM
+ARG BUILD_FROM=ghcr.io/hassio-addons/base:16.3.4
 # Ignore a specific linting rule DL3006 which requires a pin in the FROM image.
 # hadolint ignore=DL3006
 
@@ -16,13 +16,13 @@ COPY rootfs /
 
 RUN \
     # Install the 'tar' package using apk, without caching the package index locally.
-    apk add --no-cache --update tar nrpe nagios-plugins-all \
+    apk add --no-cache --update tar procps-ng python3 nrpe nagios-plugins-all \
     && rc-update add nrpe default \
     # Assign the value of BUILD_ARCH to a new variable ARCH.
     && ARCH="${BUILD_ARCH}" \
     # Check if the architecture is 'aarch64' and if so, set ARCH to 'arm64'.
     && if [ "${BUILD_ARCH}" = "aarch64" ]; then ARCH="arm64"; fi
-
+RUN chmod -R 755 /usr/lib/nagios/plugins/
 # Reset the entry point of the image to an empty array.
 # This means no default executable will be run when the container starts.
 ENTRYPOINT []
