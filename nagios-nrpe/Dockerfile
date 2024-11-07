@@ -1,6 +1,6 @@
 # Specify the base image.
 ARG BUILD_FROM
-
+#ARG BUILD_FROM=ghcr.io/hassio-addons/base:16.3.4
 # Ignore a specific linting rule DL3006 which requires a pin in the FROM image.
 # hadolint ignore=DL3006
 
