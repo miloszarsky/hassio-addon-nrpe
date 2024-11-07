@@ -5,4 +5,4 @@ mkdir -p /var/run/nagios /etc/nagios/certs /usr/lib/nagios/extra
 ALLOWED_HOSTS=$(bashio::config 'allowed_hosts')
 bashio::log.info "allowed_hosts=$ALLOWED_HOSTS"
 sed -i "s/^allowed_hosts=/allowed_hosts=$ALLOWED_HOSTS/g" /etc/nagios/nrpe.cfg
-/usr/bin/nrpe -c /etc/nagios/nrpe.cfg -f -n
+/usr/bin/nrpe -c /etc/nagios/nrpe.cfg -f
