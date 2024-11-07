@@ -1,6 +1,6 @@
 ### CHANGELOG
 
-## 2024.11.8-1
+## 2024.11.8-2
 
 ### Release Notes
   - fix issues
