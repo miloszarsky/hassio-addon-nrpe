@@ -15,13 +15,12 @@ ports_description:
   5666/tcp: Default nrpe port
 map: 
   - config:rw
-  - ssl
 startup: services
 boot: auto
 host_network: true
 apparmor: false
 host_pid: true
-homeassistant: 2023.8.1
+homeassistant: 2024.10.4
 advanced: true
 stage: experimental
 hassio_api: true
