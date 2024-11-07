@@ -1,1 +1,4 @@
 configuration:
+  allowed_hosts:
+    name: Allowed hosts
+    description: Allowed hosts for nrpe daemon (default 0.0.0.0)
