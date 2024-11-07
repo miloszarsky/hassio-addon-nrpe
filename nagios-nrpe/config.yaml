@@ -1,5 +1,5 @@
 name: Nagios Nrpe Server
-version: 2024.11.7-5
+version: 2024.11.7-6
 slug: nagios-nrpe
 description: Nrpe with plugins 
 url: https://github.com/miloszarsky/hassio-addon-nrpe
