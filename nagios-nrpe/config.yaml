@@ -8,7 +8,6 @@ arch:
   - aarch64
   - armv7
 init: false
-webui: false
 ports: 
   5666/tcp: 5666
 ports_description: 
