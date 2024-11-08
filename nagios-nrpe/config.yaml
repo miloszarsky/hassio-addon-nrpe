@@ -1,5 +1,5 @@
 name: Nagios Nrpe Server
-version: 2024.11.8-7
+version: 2024.11.8-8
 slug: nagios-nrpe
 description: Nrpe with plugins 
 url: https://github.com/miloszarsky/hassio-addon-nrpe
@@ -18,14 +18,14 @@ startup: services
 boot: auto
 host_network: true
 apparmor: true
-host_pid: true
-homeassistant: 2024.10.4
-advanced: true
-stage: experimental
-hassio_api: true
-homeassistant_api: true
-auth_api: true
-docker_api: true
+#host_pid: true
+#homeassistant: 2024.10.4
+#advanced: true
+#stage: experimental
+#hassio_api: true
+#homeassistant_api: true
+#auth_api: true
+#docker_api: true
 options:
   allowed_hosts: "0.0.0.0/0"
 schema:
