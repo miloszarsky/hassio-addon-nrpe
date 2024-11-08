@@ -1,5 +1,5 @@
 ### CHANGELOG
-## 2024.11.8-6
+## 2024.11.8-7
 ### Release Notes
   - fix issues
   - add memory plugin
