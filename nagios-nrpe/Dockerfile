@@ -16,7 +16,7 @@ COPY rootfs /
 
 RUN \
     # Install the 'tar' package using apk, without caching the package index locally.
-    apk add --no-cache --update tar procps-ng python3 nrpe nagios-plugins-all \
+    apk add --no-cache --update tar procps-ng python3 nrpe nagios-plugins-all monitoring-plugins\
     && rc-update add nrpe default \
     # Assign the value of BUILD_ARCH to a new variable ARCH.
     && ARCH="${BUILD_ARCH}" \
